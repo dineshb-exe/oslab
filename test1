@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<unistd.h>
 #include<sys/wait.h>
-
+//Just a small change
 int main(){
 	int pr1=fork();
 	wait(NULL);
