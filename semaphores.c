@@ -1,5 +1,6 @@
 //2-types binary sempaphors and counting sempaphors
 //2 functions wait() and signal()
+//int S=0; S>=0; S--; S++;
 //Bounded buffer also called producer and consumer processes
 #include <stdio.h>
 #include <unistd.h>
@@ -22,7 +23,8 @@ int main(int argc, char const *argv[]) {
       }
       else{
         printf("produces item %d\n", item);
-        counter++;
+        counter++;//signal
+
         item++;
       }
     }
@@ -33,7 +35,7 @@ int main(int argc, char const *argv[]) {
       }
       else{
         printf("consumes item %d \n",ic );
-        counter--;
+        counter--;//wait
         ic++;
       }
     }
