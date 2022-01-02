@@ -1,0 +1,3 @@
+Hi this is Dinesh.
+This is a sample file for simulating chmod system call functionality.
+After successful execution, the write permission should be denied to this file.
